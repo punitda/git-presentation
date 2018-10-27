@@ -1,0 +1,127 @@
+import { Head, Image, Appear } from 'mdx-deck'
+import { FullScreenCode, Split } from 'mdx-deck/layouts';
+import Layout from './components/Layout.js';
+export { book as theme } from 'mdx-deck/themes'
+
+
+# Understanding Git
+
+---
+export default Layout 
+
+### Things we will learn today:
+
+<Appear>
+    <li>What is Git?</li>
+    <li>How it works - 10000 ft. view?</li>
+    <li>What is Github/Bitbucket/Gitlab then?</li>
+    <li>What is username/email/password shit we deal with?(use SSH)</li>
+    <li>Learn some basic and important commands</li>
+    <li>Rebase vs Merge</li>
+    <li>Conflicts OH-MY! Why they happen and how to resolve them?</li>
+    <li>How to recover from the mistakes? </li>
+    <li>Questions?</li>
+</Appear>
+
+---
+
+<Image src={require("file-loader!./images/git-wiki-def.png")} />
+
+---
+
+export default Layout
+
+### Important words:
+<Appear>
+    <li>Distributed -> Offline Version Control</li>
+    <li>Speed -> Local Copy of Everything + Branch are lightweight</li>
+    <li>Integrity -> Checksum algo(like SHA1) + Other</li>
+    <li>Non-linear -> Branching and Merging </li>
+</Appear>
+
+---
+export default Layout
+
+## How it works?
+
+---
+export default Layout
+
+## How it stores information
+- In simple terms, it is a key value store, where:
+
+**value = data -> files + other things**
+
+**key = hash(data)**
+
+---
+export default Layout
+
+## SHA1 - The Key
+<Appear>
+    <li>Cryptographic Hash function</li>
+    <li>Given some input, it produces 40-digit hexadecimal number</li>
+    <li>If you give it same input, it should always produce same 40-digit number</li>
+</Appear>
+
+---
+export default Split
+
+<img src={require("file-loader!./images/blob.png")}/>
+
+Git stores the compressed *data* of file in a **blob** + some other metadata:
+
+- identifier blob
+- size of the content
+- delimiter
+- content
+
+---
+export default Layout
+
+## Where is this blob stored?
+```
+.git/objects
+
+```
+*Lets check example for it.*
+
+---
+export default Layout
+
+## What is missing? 🤔
+Blob is used as storage for only file contents, correct?
+
+<Appear>
+    <h2>What about?</h2>
+    <li>Filenames</li>
+    <li>Directory Structure</li>
+</Appear>
+
+---
+export default Layout
+
+## Git stores the information in Tree
+<Appear>
+    <h2> Ok, where is this Tree stored now? 😟</h2>
+    <h2>> .git/objects</h2>
+    <h4>Lets check example for it</h4>
+</Appear>
+
+---
+export default FullScreenCode
+
+<Image src={require("file-loader!./images/tree_blobs.png")} />
+
+---
+
+
+
+
+
+
+
+
+
+
+

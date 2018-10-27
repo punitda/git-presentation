@@ -1,0 +1,22 @@
+{
+  "name": "mdx-presentations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "understanding-git-start": "mdx-deck ./slides.mdx",
+    "understanding-git-export-html": "mdx-deck build ./slides.mdx"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "file-loader": "^2.0.0",
+    "mdx-deck": "^1.7.7"
+  },
+  "dependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "styled-components": "^4.0.2"
+  }
+}
