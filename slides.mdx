@@ -17,7 +17,7 @@ export default Layout
     <li>What is Github/Bitbucket/Gitlab then?</li>
     <li>What is username/email/password shit we deal with?(use SSH)</li>
     <li>Learn some basic and important commands</li>
-    <li>Rebase vs Merge</li>
+    <li>Merge and Rebase </li>
     <li>Conflicts OH-MY! Why they happen and how to resolve them?</li>
     <li>How to recover from the mistakes? </li>
     <li>Questions?</li>
@@ -114,6 +114,126 @@ export default FullScreenCode
 <Image src={require("file-loader!./images/tree_blobs.png")} />
 
 ---
+export default Layout
+
+## Commits
+
+A **Commit** points to:
+<Appear>
+    <h2>A Tree</h2>
+    <div>and contains metadata: </div>
+    <li>author and email</li>
+    <li>date</li>
+    <li>message</li>
+    <li>parent commit(one or more)</li>
+</Appear>
+
+---
+export default FullScreenCode
+
+<Image src={require("file-loader!./images/commits_points_to.png")}/>
+
+---
+export default Layout
+
+## Branches
+
+<h1>A **Branch** points to:</h1>
+<Appear>
+    <h2>A Commit</h2>
+    <li>Lets check the example</li>
+</Appear>
+
+---
+export default Layout
+
+## What is Github/Bitbucket/Gitlab?
+
+---
+export default Layout
+
+## What is the username/email/password thing? 
+<Appear>
+**Use SSH**
+</Appear>
+
+---
+export default Layout
+
+## Lets learn some basic and important commands
+
+---
+export default Layout
+
+## Merge and Rebase
+
+---
+export default Layout
+
+## What is Merge commit?
+<Appear>
+<li>They are just commits which is generated when 2 branches are merged</li>
+<li>They have 2 parents</li>
+<li>We could even merge 2 branches locally. But, what is the problem? </li>
+</Appear>
+
+---
+export default Layout
+
+https://i.imgur.com/7OVi4hL.gifv
+
+---
+export default Layout
+
+## Rebase = give a commit a new parent
+
+### When to use it?
+<Appear>
+    <li>Linear History - We don't want Messy merge commit in our feature branch history</li>
+    <li>Squash Changes - When you are merging with main branch</li>
+    <li>Fixup/Edit/Reorder some prior commits in your feature branch</li>
+</Appear>
+
+---
+export default FullScreenCode
+
+<Image src={require("file-loader!./images/merge_vs_rebase_1.png")} />
+
+---
+export default FullScreenCode
+
+<Image src={require("file-loader!./images/merge_vs_rebase_2.png")} />
+
+---
+export default FullScreenCode
+
+<Image src={require("file-loader!./images/merge_vs_rebase_3.png")} />
+
+---
+export default Layout
+
+## Conflicts - Why they happen and how to resolve them?
+
+Let's see with an example : https://gist.github.com/karenyyng/f19ff75c60f18b4b8149 
+
+---
+export default Layout
+
+## How to recover from mistakes?
+
+<Appear>
+    <li>Checkout</li>
+    <li>Clean</li>
+    <li>Reset</li>
+    <li>Revert</li>
+</Appear>
+
+
+---
+export default Layout
+
+# Thank you! and Questions?...
+
 
 
 
